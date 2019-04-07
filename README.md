@@ -3,7 +3,7 @@
 This is a LRU Cache using memory to store and fetch key-value pairs, capacity of cache is initilaized as Tomcat start, and return http status code with result as JSON object, here are some example:
 
 ```
-curl -x POST http://cache.service/api/v1/put/1 -d "value=400"
+curl -x POST http://youraddress: port/api/v1/put/1 -d "value=400"
 ```
 
 ```
@@ -14,7 +14,7 @@ curl -x POST http://cache.service/api/v1/put/1 -d "value=400"
 ```
 
 ```
-curl -x POST http://cache.service/api/v1/put/2 -d "value=800"
+curl -x POST http://youraddress: port/api/v1/put/2 -d "value=800"
 ```
 
 ```
@@ -25,7 +25,7 @@ curl -x POST http://cache.service/api/v1/put/2 -d "value=800"
 ```
 
 ```
-curl -x GET http://cache.service/api/v1/get/1
+curl -x GET http://youraddress: port/api/v1/get/1
 ```
 
 ```
@@ -39,7 +39,7 @@ curl -x GET http://cache.service/api/v1/get/1
 ```
 
 ```
-curl XPUT http://cache.service/api/v1/put/3 -d "value=1200"  //evicts key=2
+curl -x POST http://youraddress: port/api/v1/put/3 -d "value=1200"  //evicts key=2
 ```
 
 ```
@@ -53,7 +53,7 @@ curl XPUT http://cache.service/api/v1/put/3 -d "value=1200"  //evicts key=2
 ```
 
 ```
-curl XGET http://cache.service/api/v1/get/2
+curl -x GET http://youraddress: port/api/v1/get/2
 ```
 
 ```
