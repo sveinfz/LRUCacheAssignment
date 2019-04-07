@@ -1,4 +1,4 @@
-#LRUCache Assignment
+# LRUCache Assignment
 
 This is a LRU Cache using memory to store and fetch key-value pairs, capacity of cache is initilaized as Tomcat start, and return http status code with result as JSON object, here are some example:
 
